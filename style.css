@@ -1,0 +1,330 @@
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+     :root {
+        --main-bg-color: #ee171f;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgba(128, 128, 128, 0.253);
+    }
+    
+    .dark-mode {
+        background: black;
+        color: rgb(255, 255, 255);
+    }
+    
+    nav {
+        background-color: black;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    
+    nav img {
+        display: flex;
+        align-items: center;
+        width: 110px;
+    }
+    
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0px 10px;
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav ul li a:hover {
+        color: #cccaca;
+        transition: all 0.6 s ease;
+    }
+    
+    .btnD {
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        border: 1px solid white;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    .btnD:hover {
+        border: 1px solid #cccaca;
+        color: #cccaca;
+        transition: all 0.6 s ease;
+    }
+    
+    .DrStrange img {
+        width: 100%;
+    }
+    
+    .M-head {
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        margin: 20px 20px;
+    }
+    
+    .container {
+        background-color: rgba(128, 128, 128, 0.253);
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0px 100px;
+        height: auto;
+        border: thick double #6c7477;
+    }
+    
+    .phase {
+        position: absolute;
+        margin: 10px 10px;
+        font-size: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    
+    .card {
+        background: rgba(250, 249, 249, 0.205);
+        width: 300px;
+        height: auto;
+        margin: 70px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        flex-wrap: wrap;
+    }
+    
+    .card p {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .card:hover {
+        background-color: #000000;
+        color: white;
+        transform: scale(1.05);
+        transition: all 0.7s ease;
+    }
+    
+    .card-image {
+        background-color: rgb(190, 42, 42);
+        height: 30vh;
+        width: 10vw;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        background-size: cover;
+    }
+    
+    .i1 {
+        background-image: url('/img/Phase1/Iron\ Man\ 2008.jpg');
+    }
+    
+    .i2 {
+        background-image: url('/img/Phase1/The\ Incredible\ Hulk.jpg');
+    }
+    
+    .i3 {
+        background-image: url('/img/Phase1/Iron\ Man\ 2.jpg');
+    }
+    
+    .i4 {
+        background-image: url('/img/Phase1/Thor\ 2011.jpg');
+    }
+    
+    .i5 {
+        background-image: url('/img/Phase1/Captain\ America.jpg');
+    }
+    
+    .i6 {
+        background-image: url('/img/Phase1/The\ Avengers.jpg');
+    }
+    
+    .phase2-container {
+        margin: 100px 0px;
+    }
+    
+    .pi1 {
+        background-image: url(/img/Phase2/Iron\ Man\ 3.jpg);
+    }
+    
+    .pi2 {
+        background-image: url(/img/Phase2/Thor\ The\ Dark\ World\ \(2013\).jpg);
+    }
+    
+    .pi3 {
+        background-image: url(/img/Phase2/Captain\ America\ The\ Winter\ Soldier.jpg);
+    }
+    
+    .pi4 {
+        background-image: url(/img/Phase2/Guardians\ of\ the\ galaxy.jpg);
+    }
+    
+    .pi5 {
+        background-image: url(/img/Phase2/Avengers\ Age\ of\ Ultron\ \(2015\).jpg);
+    }
+    
+    .pi6 {
+        background-image: url(/img/Phase2/Ant-Man\ \(2015\).jpg);
+    }
+    
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-form {
+        background-color: rgba(128, 128, 128, 0.253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        height: 700px;
+        margin-bottom: 90px;
+    }
+    
+    .form {
+        width: 45vw;
+        height: 500px;
+        background: #e6e6e6;
+        border-radius: 8px;
+        box-shadow: 0 0 40px -10px #000;
+        margin: calc(30vh - 220px) auto;
+        padding: 20px 30px;
+        max-width: calc(100vw - 40px);
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+    }
+    
+    .form h2 {
+        margin: 10px 0;
+        padding-bottom: 10px;
+        width: 180px;
+        color: #78788c;
+        border-bottom: 3px solid #78788c
+    }
+    
+    .form input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        font-family: 'Montserrat', sans-serif;
+        transition: all .3s;
+        border-bottom: 2px solid #bebed2
+    }
+    
+    .form input:focus {
+        border-bottom: 2px solid #78788c
+    }
+    
+    .form p:before {
+        content: attr(type);
+        display: block;
+        margin: 28px 0 0;
+        font-size: 14px;
+        color: #5a5a5a
+    }
+    
+    .form button {
+        float: right;
+        padding: 15px 20px;
+        margin: 20px 0 0;
+        font-family: 'Montserrat', sans-serif;
+        border: 2px solid #78788c;
+        background: 0;
+        color: #5a5a6e;
+        cursor: pointer;
+        transition: all .3s
+    }
+    
+    .form button:hover {
+        background: #78788c;
+        color: #fff
+    }
+    
+    .about {
+        background-color: rgba(128, 128, 128, 0.253);
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0px 100px;
+        height: 450px;
+        overflow: auto;
+        margin-bottom: 10px;
+    }
+    
+    .about h2 {
+        padding: 10px 0px;
+        margin: 10px 0px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    
+    .about p {
+        font-size: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    footer {
+        background-color: black;
+        color: white;
+        height: 4vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    @media screen and (max-width:1550px) {
+        .DrStrange img {
+            width: 210vh;
+            overflow: hidden;
+        }
+        .container {
+            flex-wrap: wrap;
+        }
+        .card {
+            margin: 49px 0px;
+            height: 39vh;
+        }
+        .card-image {
+            width: 100%;
+        }
+        .phase2-container {
+            margin: 10px 0px;
+        }
+    }
